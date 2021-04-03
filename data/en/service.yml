@@ -1,0 +1,34 @@
+################################# Service #################################
+service:
+  enable : true
+  title : Our Activities
+  service_item :
+    # service item loop
+    - name : BabyCarryWorkout
+      icon : ti-world # themify icon pack : https://themify.me/themify-icons
+      content : "About BabyCarryWorkout: excercises, movements, carriers and music."
+      
+    # service item loop
+    - name : Parents
+      icon : ti-heart # themify icon pack : https://themify.me/themify-icons
+      content : Everything that you want to know when you start excercising with your baby in the sling.
+      
+    # service item loop
+    - name : Partner locations
+      icon : ti-direction # themify icon pack : https://themify.me/themify-icons
+      content : BCW is offered at sportclubs, yogastudios and other locations. Do you want to host?
+      
+    # service item loop
+    - name : Education
+      icon : ti-blackboard # themify icon pack : https://themify.me/themify-icons
+      content : Get educated to become a BCW instructor, for sports instructors and babywearing professionals.
+      
+    # service item loop
+    - name : Certified instructors
+      icon : ti-medall # themify icon pack : https://themify.me/themify-icons
+      content : "A list of our certified instructors. They hava received special training in order to safely perform a BabyCarryWorkout"
+      
+    # service item loop
+    - name : Bereka
+      icon :  ti-shopping-cart-full # themify icon pack : https://themify.me/themify-icons
+      content : "We use the babycarriers made by Bereka. The comfortable Mbereko soft structured carrier."

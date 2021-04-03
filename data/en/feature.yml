@@ -1,0 +1,31 @@
+############################# feature ###################################
+feature:
+  enable : true
+  image : images/about/about-business-man.jpg
+  image_webp : images/about/about-business-man.webp
+  title : We’re babywearing enthusiasts
+  content :  |
+             Melissa Budding founded BabyCarryWorkout in 2011, after giving birth to her second child.
+
+             Herself coming from Africa (Zimbabwe) and growing up babywearing .. of course she carried her own children!
+             The feeling and practicality of it is great - everyone should experience this!
+  feature_item : 
+      # feature item loop
+    - title : We go global
+      icon : ti-world # themify icon pack : https://themify.me/themify-icons
+      content : We are based in the Netherlands, BabyCarryWorkout is also available in Belgium an England. Do you want to host?
+      
+      # feature item loop
+    - title : Customization
+      icon : ti-panel # themify icon pack : https://themify.me/themify-icons
+      content : We cater to your needs. Of course excercising in a group motivates you, but we have an eye for your needs.
+
+      # feature item loop
+    - title : Progress
+      icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
+      content : Improve your condition steadily over time.
+      
+      # feature item loop
+    - title : Spread the word
+      icon : ti-announcement # themify icon pack : https://themify.me/themify-icons
+      content : Invite your friends e.g. from your pregnancy class - and get fitter together.

@@ -1,0 +1,26 @@
+################################# Testimonial #########################
+testimonial:
+  enable : true
+  bg_image : images/backgrounds/bg-testimonial.jpg
+  bg_image_webp : images/backgrounds/bg-testimonial.webp
+  testimonial_item :
+    # testimonial item loop
+    - name : Renske Kruit
+      image : images/client/client-1.jpg
+      image_webp : images/client/client-1.webp
+      date : Dec 26, 2018
+      content : BabyCarryWorkout had helped me a lot to feel fitter after pregnancy. Also linking up with other mothers in the same situation was very useful.
+      
+    # testimonial item loop
+    - name : Katerina Smith
+      image : images/client/client-2.jpg
+      image_webp : images/client/client-2.webp
+      date : Dec 26, 2018
+      content : Im am glad that I had the opprtunity to do these excercises. It really helped me and it was so nice to feel my little falling asleep while I was busy.
+      
+    # testimonial item loop
+#    - name : Lemos Kail
+#      image : images/client/client-1.jpg
+#      image_webp : images/client/client-1.webp
+#      date : Dec 26, 2018
+#      content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium minima ex, quia error, deserunt voluptatibus repellendus? Incidunt eligendi aliquam repellat molestias, vel sed optio rem odit quis ratione non consequuntur!

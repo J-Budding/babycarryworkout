@@ -1,0 +1,12 @@
+############################### Banner ################################
+banner:
+  enable : true
+  bg_image_webp : "images/backgrounds/hero-area.webp"
+  bg_image : "images/backgrounds/hero-area.jpg"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "Experience BabyCarryWorkout"
+  content : "BabyCarryWorkout, the way to build and strengthen the bond between parent and child! Improve your physical condition without leaving your baby behind."
+  button:
+    enable : true
+    label : "Explore Us"
+    link : "#feature"
