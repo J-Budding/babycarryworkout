@@ -1,0 +1,27 @@
+hugo_0.82.0_Linux-64bit.deb
+
+language: python
+
+env:
+  global:
+  - 'SFTP_USER=$SFTP_USERT'
+# - 'SFTP_PASSWORD=[password]'
+# - 'SFTP_KEY=[base64-encoded-rsa-key]'
+
+install:
+    - wget https://github.com/gohugoio/hugo/releases/download/v0.82.0/hugo_0.82.0_Linux-64bit.deb
+    - sudo dpkg -i hugo*.deb
+    - pip install Pygments
+
+script:
+    - hugo
+
+
+after_success:
+    - echo "${SFT_USER}"
+    - echo "hallo daar"
+#   - echo "${SFTP_KEY}" | base64 --decode >/tmp/sftp_rsa
+#   - curl --ftp-create-dirs
+#          -T README.md
+#          --key /tmp/sftp_rsa
+#          sftp://${SFTP_USER}:${SFTP_PASSWORD}@babycarryworkout.com/duracell/README.md
