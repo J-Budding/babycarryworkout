@@ -39,7 +39,7 @@ team:
     - name : Michael Jonson
       image_webp : images/team/team-3.webp
       image : images/team/team-3.jpg
-      designation : Instructor
+      designation : BCW Instructor
       content : Instructor and physiotherapist, currently operating from South Africa.
       social :
         - icon : ti-facebook # themify icon pack : https://themify.me/themify-icons
