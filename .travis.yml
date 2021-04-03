@@ -2,7 +2,7 @@ language: python
 
 env:
   global:
-  - 'SFTP_USER=$SFTP_USERT'
+# - 'SFTP_USER=$SFTP_USERT'
   - 'MIJNVAR=$EENVAR'
 # - 'SFTP_PASSWORD=[password]'
 # - 'SFTP_KEY=[base64-encoded-rsa-key]'
@@ -17,7 +17,9 @@ script:
 
 
 after_success:
-    - echo "${SFT_USER}"
+    - echo "${SFTP_USERT}"
+    - echo "${SFTP_USERT}" > /tmp/oef.txt
+    - cat oef.txt
     - echo "hallo daar"
     - echo "${EENVAR}"
     - echo "${MIJNVAR}"
