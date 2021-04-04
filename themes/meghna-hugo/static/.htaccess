@@ -1,3 +1,5 @@
+Header add X-Varnish-Control "disabled"
+
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
@@ -47,3 +49,8 @@ ExpiresByType application/javascript "access plus 1 year"
 ExpiresByType application/pdf "access plus 1 year"
 ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
 </IfModule>
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://babycarryworkout.com/$1 [L,R=301]
+

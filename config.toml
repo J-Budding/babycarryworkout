@@ -1,5 +1,5 @@
 ################################# Default configuration ###################
-baseURL = "https://examplesite.com"
+baseURL = "https://babycarryworkout.com"
 title = "BabyCarryWorkout"
 theme = "meghna-hugo"
 themesDir = "../.."

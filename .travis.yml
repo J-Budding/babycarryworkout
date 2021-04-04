@@ -1,11 +1,11 @@
+# require the branch name to be master (note for PRs this is the base branch name)
+if: branch = master
+
 language: python
 
 env:
   global:
-  - 'SFTP_USER=$SFTP_USERT'
   - 'MIJNVAR=$EENVAR'
-# - 'SFTP_PASSWORD=[password]'
-# - 'SFTP_KEY=[base64-encoded-rsa-key]'
 
 install:
     - wget https://github.com/gohugoio/hugo/releases/download/v0.82.0/hugo_0.82.0_Linux-64bit.deb
@@ -17,13 +17,10 @@ script:
 
 
 after_success:
-    - echo "${SFT_USER}"
+    - cat /tmp/oef.txt
     - echo "hallo daar"
     - echo "${EENVAR}"
     - echo "${MIJNVAR}"
+#   - scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no README.md babycarryworkout.com@ssh.babycarryworkout.com:/www
+    - rsync -Pav -e "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" public/ babycarryworkout.com@ssh.babycarryworkout.com:/www
     - echo "stoppen maar"
-#   - echo "${SFTP_KEY}" | base64 --decode >/tmp/sftp_rsa
-#   - curl --ftp-create-dirs
-#          -T README.md
-#          --key /tmp/sftp_rsa
-#          sftp://${SFTP_USER}:${SFTP_PASSWORD}@babycarryworkout.com/duracell/README.md
