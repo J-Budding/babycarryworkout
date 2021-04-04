@@ -18,7 +18,7 @@ script:
 
 after_success:
     - echo "${SFTP_USERT}"
-    - echo "${SFTP_USERT}" > /tmp/oef.txt
+    - echo "${SFTP_USERT}" | cut -b 1-6 > /tmp/oef.txt
     - cat /tmp/oef.txt
     - echo "hallo daar"
     - echo "${EENVAR}"
