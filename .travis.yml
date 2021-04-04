@@ -17,15 +17,10 @@ script:
 
 
 after_success:
-    - echo "${SFTP_USERT}"
-    - echo "${SFTP_USERT}" | cut -b 1-6 > /tmp/oef.txt
     - cat /tmp/oef.txt
     - echo "hallo daar"
     - echo "${EENVAR}"
     - echo "${MIJNVAR}"
+    - echo "${SFTP_KEY}" | base64 --decode >/tmp/sftp_rsa
+    - curl --ftp-create-dirs -T README.md --key /tmp/sftp_rsa sftp://${SFTP_USER}:${SFTP_PASSWORD}@babycarryworkout.com/duracell/README.md
     - echo "stoppen maar"
-#   - echo "${SFTP_KEY}" | base64 --decode >/tmp/sftp_rsa
-#   - curl --ftp-create-dirs
-#          -T README.md
-#          --key /tmp/sftp_rsa
-#          sftp://${SFTP_USER}:${SFTP_PASSWORD}@babycarryworkout.com/duracell/README.md
