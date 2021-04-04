@@ -21,7 +21,6 @@ after_success:
     - echo "hallo daar"
     - echo "${EENVAR}"
     - echo "${MIJNVAR}"
-#   - echo "${SFTP_KEY}" | base64 --decode >/tmp/sftp_rsa
-#   - curl --ftp-create-dirs -T README.md --key /tmp/sftp_rsa sftp://${SFTP_USER}:${SFTP_PASSWORD}@babycarryworkout.com/duracell/README.md
-    - scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no README.md babycarryworkout.com@ssh.babycarryworkout.com:/www
+#   - scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no README.md babycarryworkout.com@ssh.babycarryworkout.com:/www
+    - rsync -Pav -e "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" public/ babycarryworkout.com@ssh.babycarryworkout.com:/www
     - echo "stoppen maar"
