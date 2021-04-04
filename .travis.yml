@@ -1,11 +1,11 @@
+# require the branch name to be master (note for PRs this is the base branch name)
+if: branch = master
+
 language: python
 
 env:
   global:
-# - 'SFTP_USER=$SFTP_USERT'
   - 'MIJNVAR=$EENVAR'
-# - 'SFTP_PASSWORD=[password]'
-# - 'SFTP_KEY=[base64-encoded-rsa-key]'
 
 install:
     - wget https://github.com/gohugoio/hugo/releases/download/v0.82.0/hugo_0.82.0_Linux-64bit.deb
