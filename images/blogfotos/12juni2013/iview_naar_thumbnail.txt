@@ -1,0 +1,3 @@
+"C:\Program Files (x86)\IrfanView\i_view32.exe" C:\applicaties\wamp\www\sj\images\blogfotos\12juni2013\*.JPG /resize=(259,192) /resample /aspectratio /convert=C:\applicaties\wamp\www\sj\images\blogfotos\12juni2013\thumb\$N_thumb.jpg
+
+"C:\Program Files (x86)\IrfanView\i_view32.exe" C:\applicaties\wamp\www\sj\images\blogfotos\12juni2013\*.JPG /resize=(985,739) /resample /aspectratio /convert=C:\applicaties\wamp\www\sj\images\blogfotos\12juni2013\web\$N_web.jpg
